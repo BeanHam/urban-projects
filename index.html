@@ -132,8 +132,13 @@
       <div class="card-content">
         <h2>Spatial Integration</h2>
         <p>
-          A framework for integrating multiple spatial datasets into a unified structure.  
-          This project focuses on harmonizing geospatial sources and resolving inconsistencies in spatial reference systems, formats, and scales.
+          We explore the application of large language models (LLMs) to empower domain experts in integrating large, heterogeneous, and noisy urban spatial datasets. 
+          Traditional rule-based integration methods are unable to cover all edge cases, requiring manual verification and repair. 
+          Machine learning approaches require collecting and labeling of large numbers of task-specific samples. 
+          In this study, we investigate the potential of LLMs for spatial data integration. 
+          We show that while LLMs exhibit spatial reasoning capabilities, they struggle to connect the macro-scale environment with the relevant computational geometry tasks,
+          often producing logically incoherent responses. But when provided relevant features, thereby reducing dependence on spatial reasoning, 
+          LLMs are able to generate high-performing results.           
         </p>
         <img src="images/spatial-integration.png" alt="Spatial Integration Cover Image">
         <div class="button-group">
@@ -148,8 +153,12 @@
       <div class="card-content">
         <h2>Spatial Annotation</h2>
         <p>
-          A visual labeling tool designed for spatial datasets.  
-          It supports interactive annotation, region tagging, and metadata enrichment for geospatial images and maps.
+          Equitable urban transportation applications require high-fidelity digital representations of the built environment (streets, crossings, curb ramps and more). 
+          Direct inspections and manual annotations are costly at scale, while conventional machine learning methods require substantial annotated training data for adequate performance. 
+          This study explores vision language models as a tool for annotating diverse urban features from satellite images, reducing the dependence on human annotation. 
+          We demonstrate a proof-ofconcept using a vision language model and a visual prompting strategy that considers segmented image elements. 
+          Experiments on two urban features — stop lines and raised tables — show that while zero-shot prompting rarely works, the segmentation and visual prompting strategies achieve 
+          nearly 40% intersection-over-union accuracy.
         </p>
         <img src="images/spatial-annotation.png" alt="Spatial Annotation Cover Image">
         <div class="button-group">
@@ -164,8 +173,10 @@
       <div class="card-content">
         <h2>Spatial Disaggregation</h2>
         <p>
-          A spatial data processing toolkit for disaggregating urban-level data into finer spatial units.  
-          It uses geospatial interpolation and boundary mapping for localized analytics.
+          Open data is frequently released spatially aggregated, usually to comply with privacy policies. 
+          But coarse, heterogeneous aggregations complicate learning and integration for downstream AI/ML systems. 
+          In this work, we propose models to disaggregate spatio-temporal data from a low-resolution, irregular partition (e.g., census tract) to a high-resolution, 
+          irregular partition (e.g., city block).
         </p>
         <img src="images/spatial-disaggregation.png" alt="Spatial Disaggregation Cover Image">
         <div class="button-group">
