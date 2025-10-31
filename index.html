@@ -30,6 +30,14 @@
       opacity: 0.85;
     }
 
+    header p.intro {
+      max-width: 700px;
+      margin: 1.5rem auto 0;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      opacity: 0.95;
+    }
+
     main {
       display: flex;
       flex-direction: column;
@@ -43,9 +51,10 @@
     .card {
       background: white;
       border-radius: 12px;
-      padding: 2rem;
+      padding: 0;
       width: 100%;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
       transition: transform 0.2s ease;
     }
 
@@ -54,28 +63,47 @@
     }
 
     .card img {
-      max-width: 100%;
-      border-radius: 8px;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-content {
+      padding: 1.5rem 2rem;
     }
 
     .card h2 {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       color: #24292e;
     }
 
+    .button-group {
+      margin-top: 1rem;
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
     a.button {
-      display: inline-block;
-      margin-top: 0.8rem;
       text-decoration: none;
       color: white;
       background: #0366d6;
       padding: 0.5rem 1rem;
       border-radius: 6px;
       font-weight: 600;
+      transition: background 0.2s ease;
     }
 
     a.button:hover {
       background: #0253ad;
+    }
+
+    a.button.secondary {
+      background: #6f42c1;
+    }
+
+    a.button.secondary:hover {
+      background: #5936a2;
     }
 
     footer {
@@ -89,46 +117,77 @@
 </head>
 <body>
   <header>
-    <h1>Urban Spatial Projects</h1>
-    <p class="subtitle">A portfolio of projects on spatial urban data</p>
-    
-    <p style="max-width: 700px; margin: 1.5rem auto 0; font-size: 1.05rem; line-height: 1.6; opacity: 0.95;">
+    <h1>Urban Projects</h1>
+    <p class="intro">
       All projects presented here explore various aspects of <strong>urban spatial intelligence</strong>, 
       with a shared goal of enhancing the <strong>quality</strong>, <strong>integrity</strong>, and 
-      <strong>equity</strong> of urban data. Together, they aim to support more reliable, interpretable, 
-      and inclusive urban analysis and decision-making.
+      <strong>equity</strong> of urban data. Together, they aim to build more reliable, interpretable, 
+      and inclusive spatial information systems that support evidence-based urban analysis and decision-making.
     </p>
   </header>
 
   <main>
     <!-- Project 1 -->
     <div class="card">
-      <h2>Spatial Integration</h2>
-      <p>
-        A framework for integrating multiple spatial datasets into a unified structure.  
-        This project focuses on harmonizing geospatial sources and resolving inconsistencies in spatial reference systems, formats, and scales.
-      </p>
-      <a href="https://github.com/BeanHam/2024-spatial-data-integration" class="button" target="_blank">View on GitHub</a>
+      <img src="images/spatial-integration.jpg" alt="Spatial Integration Cover Image">
+      <div class="card-content">
+        <h2>Spatial Integration</h2>
+        <p><strong>Repository:</strong> 
+          <a href="https://github.com/BeanHam/2024-spatial-data-integration" target="_blank">
+            2024-spatial-data-integration
+          </a>
+        </p>
+        <p>
+          A framework for integrating multiple spatial datasets into a unified structure.  
+          This project focuses on harmonizing geospatial sources and resolving inconsistencies in spatial reference systems, formats, and scales.
+        </p>
+        <div class="button-group">
+          <a href="https://github.com/BeanHam/2024-spatial-data-integration" class="button" target="_blank">View on GitHub</a>
+          <a href="#" class="button secondary" target="_blank">Read Paper</a>
+        </div>
+      </div>
     </div>
 
     <!-- Project 2 -->
     <div class="card">
-      <h2>Spatial Annotation</h2>
-      <p>
-        A visual labeling tool designed for spatial datasets.  
-        It supports interactive annotation, region tagging, and metadata enrichment for geospatial images and maps.
-      </p>
-      <a href="https://github.com/BeanHam/2024-vl-annotation" class="button" target="_blank">View on GitHub</a>
+      <img src="images/spatial-annotation.jpg" alt="Spatial Annotation Cover Image">
+      <div class="card-content">
+        <h2>Spatial Annotation</h2>
+        <p><strong>Repository:</strong> 
+          <a href="https://github.com/BeanHam/2024-vl-annotation" target="_blank">
+            2024-vl-annotation
+          </a>
+        </p>
+        <p>
+          A visual labeling tool designed for spatial datasets.  
+          It supports interactive annotation, region tagging, and metadata enrichment for geospatial images and maps.
+        </p>
+        <div class="button-group">
+          <a href="https://github.com/BeanHam/2024-vl-annotation" class="button" target="_blank">View on GitHub</a>
+          <a href="#" class="button secondary" target="_blank">Read Paper</a>
+        </div>
+      </div>
     </div>
 
     <!-- Project 3 -->
     <div class="card">
-      <h2>Spatial Disaggregation</h2>
-      <p>
-        A spatial data processing toolkit for disaggregating urban-level data into finer spatial units.  
-        It uses geospatial interpolation and boundary mapping for localized analytics.
-      </p>
-      <a href="https://github.com/BeanHam/2024-urban-disaggregation" class="button" target="_blank">View on GitHub</a>
+      <img src="images/spatial-disaggregation.jpg" alt="Spatial Disaggregation Cover Image">
+      <div class="card-content">
+        <h2>Spatial Disaggregation</h2>
+        <p><strong>Repository:</strong> 
+          <a href="https://github.com/BeanHam/2024-urban-disaggregation" target="_blank">
+            2024-urban-disaggregation
+          </a>
+        </p>
+        <p>
+          A spatial data processing toolkit for disaggregating urban-level data into finer spatial units.  
+          It uses geospatial interpolation and boundary mapping for localized analytics.
+        </p>
+        <div class="button-group">
+          <a href="https://github.com/BeanHam/2024-urban-disaggregation" class="button" target="_blank">View on GitHub</a>
+          <a href="#" class="button secondary" target="_blank">Read Paper</a>
+        </div>
+      </div>
     </div>
   </main>
 
